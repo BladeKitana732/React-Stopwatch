@@ -33,6 +33,10 @@ export default class Buttons extends Component {
 
       //going to try another JS method now
       restartCount = () => {
+          this.setState({
+              counter: 0,
+              paused: true
+          })
        clearTimeout(this.countInterval)
         
       }
