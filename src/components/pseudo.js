@@ -33,3 +33,5 @@ state = {
 resources 
 
 //https://www.w3schools.com/js/js_timing.asp
+
+//https://www.youtube.com/watch?v=NAx76xx40jM&t=230s
