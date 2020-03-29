@@ -26,15 +26,14 @@ export default class Buttons extends Component {
 
       pauseCount = () => {
         //moved functionality code of restart to here cause thats how it was acting; as a pause button. 
+      
         clearInterval(this.countInterval)
-        
-          //test to see if works
-        //   console.log();
-      }
+      
+    }    
 
       //going to try another JS method now
       restartCount = () => {
-        
+       clearTimeout(this.countInterval)
         
       }
      
