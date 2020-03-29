@@ -11,14 +11,16 @@ export default class Buttons extends Component {
       }
 
       startCount = () => {
-        this.setState({
-            //increments the counter from state in constructor by 1; need to use setInterval
-            counter: setInterval(this.state.counter + 1, 1000),
+            //increments the counter from state in constructor by 1; need to use setInterval; adding this.countInterval equal to setInterval to display it properly? lets see
+            this.countInterval = setInterval(() => {
+                this.setState({
+                counter: this.state.counter + 1,
+            })
             //states when clicked that it is no longer paused. 
-            paused: false,
-        })
+            // paused: false,
+        }, 1000)
         //test to see if works
-        console.log(this.state.counter);
+        console.log(this.state.countInterval);
       }
 
       pauseCount = () => {
