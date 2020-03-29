@@ -12,8 +12,8 @@ export default class Buttons extends Component {
 
       startCount = () => {
         this.setState({
-            //increments the counter from state in constructor by 1
-            counter: this.state.counter + 1,
+            //increments the counter from state in constructor by 1; need to use setInterval
+            counter: setInterval(this.state.counter + 1, 5000),
             //states when clicked that it is no longer paused. 
             paused: false,
         })
@@ -28,6 +28,7 @@ export default class Buttons extends Component {
           console.log();
       }
 
+      //going to need to use clearInterval 
       restartCount = () => {
           this.setState({
 

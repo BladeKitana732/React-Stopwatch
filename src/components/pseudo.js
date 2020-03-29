@@ -29,3 +29,7 @@ state = {
 }
 
 //all needs to be rendered under one file?? 
+
+resources 
+
+//https://www.w3schools.com/js/js_timing.asp
