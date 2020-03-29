@@ -23,7 +23,7 @@ export default class Buttons extends Component {
       }
 
       pauseCount = () => {
-        //got it by referencing my boxcolor toggle. yay!
+        //got it by referencing my boxcolor toggle. yay! took about 4 tries lol
         if (this.state.paused === false) {
             this.setState({
                 paused: true
