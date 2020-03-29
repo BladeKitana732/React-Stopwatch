@@ -29,10 +29,12 @@ export default class Buttons extends Component {
             })
             clearInterval(this.countInterval)
     }   else {
-        this.setState({
-            paused: false
+        this.countInterval = setInterval(() => {
+            this.setState({
+            counter: this.state.counter + 1,
+            paused: false,
         })
-        setInterval(this.countInterval)
+    }, 1000)
     }
 }
 
