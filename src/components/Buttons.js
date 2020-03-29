@@ -15,6 +15,7 @@ export default class Buttons extends Component {
             this.countInterval = setInterval(() => {
                 this.setState({
                 counter: this.state.counter + 1,
+                paused: false,
             })
             //states when clicked that it is no longer paused. 
             // paused: false,
