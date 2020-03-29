@@ -17,6 +17,7 @@ export default class Buttons extends Component {
             //states when clicked that it is no longer paused. 
             paused: false,
         })
+        //test to see if works
         console.log(this.state.counter);
       }
 
@@ -25,6 +26,7 @@ export default class Buttons extends Component {
 
 
           })
+          //test to see if works
           console.log();
       }
 
@@ -34,6 +36,7 @@ export default class Buttons extends Component {
 
 
           })
+          //test to see if works
           console.log();
       }
 
