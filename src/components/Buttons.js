@@ -44,7 +44,7 @@ export default class Buttons extends Component {
 
       //going to need to use clearInterval 
       restartCount = () => {
-        clearInterval(this.state.countInterval)
+        clearInterval(this.countInterval)
         
       }
      
