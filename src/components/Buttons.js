@@ -21,7 +21,7 @@ export default class Buttons extends Component {
             // paused: false,
         }, 1000)
         //test to see if works
-        // console.log(this.countInterval);
+        console.log(this.countInterval);
       }
 
       pauseCount = () => {
@@ -44,13 +44,10 @@ export default class Buttons extends Component {
 
       //going to need to use clearInterval 
       restartCount = () => {
-        this.restartInterval = clearInterval(
-            this.setState({
-            counter: 0,
-            paused: true
-            })
-        )
+        clearInterval(this.state.countInterval)
+        
       }
+     
 
     render() {
         return (
