@@ -20,7 +20,7 @@ export default class Buttons extends Component {
             // paused: false,
         }, 1000)
         //test to see if works
-        console.log(this.state.countInterval);
+        console.log(this.countInterval);
       }
 
       pauseCount = () => {
