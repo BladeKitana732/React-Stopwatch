@@ -17,18 +17,24 @@ export default class Buttons extends Component {
                 counter: this.state.counter + 1,
                 paused: false,
             })
-            //states when clicked that it is no longer paused. 
-            // paused: false,
         }, 1000)
         //test to see if works
         console.log(this.countInterval);
       }
 
       pauseCount = () => {
-        //moved functionality code of restart to here cause thats how it was acting; as a pause button. 
-      clearInterval(this.countInterval)
-      
-    }    
+        if (this.state.paused === false) {
+            this.setState({
+                paused: true
+            })
+            clearInterval(this.countInterval)
+    }   else {
+        this.setState({
+            paused: false
+        })
+        setInterval(this.countInterval)
+    }
+}
 
       //going to try another JS method now
       restartCount = () => {
