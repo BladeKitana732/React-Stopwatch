@@ -9,9 +9,6 @@ export default class App extends Component {
   
         <div className="button-container">
 
-          {/* <Start />
-          <Pause />
-          <Restart /> */}
 
         </div>
 
