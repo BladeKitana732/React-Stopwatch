@@ -26,8 +26,7 @@ export default class Buttons extends Component {
 
       pauseCount = () => {
         //moved functionality code of restart to here cause thats how it was acting; as a pause button. 
-      
-        clearInterval(this.countInterval)
+      clearInterval(this.countInterval)
       
     }    
 
@@ -46,10 +45,11 @@ export default class Buttons extends Component {
         return (
             <div>
                 <h1>Count: {this.state.counter}</h1>
-
-                <button onClick= {this.startCount}>Start</button>
-                <button onClick= {this.pauseCount}>Pause</button>
-                <button onClick= {this.restartCount}>Restart</button>
+              <div className='btn-grid'>  
+                <button className='button' onClick= {this.startCount}>Start</button>
+                <button className='button' onClick= {this.pauseCount}>Pause</button>
+                <button className='button' onClick= {this.restartCount}>Restart</button>
+              </div>  
             </div>
         )
     }
