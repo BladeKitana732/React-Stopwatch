@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import './App.css';
+import Buttons from './components/Buttons'
 
 
 export default class App extends Component {
@@ -9,6 +10,7 @@ export default class App extends Component {
   
         <div className="button-container">
 
+          <Buttons />
 
         </div>
 
