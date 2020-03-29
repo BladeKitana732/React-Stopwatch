@@ -25,26 +25,16 @@ export default class Buttons extends Component {
       }
 
       pauseCount = () => {
-          //needs if/else statement to pause at current counter but continue on from that point if clicked again
-        if(this.state.counter === this.countInterval) {
-            this.setState({
-                counter: this.counter,
-                paused: true
-            })
-        } else {
-            this.setState({
-                counter: this.counter,
-                paused: false
-            })
-        }
+        //moved functionality code of restart to here cause thats how it was acting; as a pause button. 
+        clearInterval(this.countInterval)
         
           //test to see if works
         //   console.log();
       }
 
-      //going to need to use clearInterval 
+      //going to try another JS method now
       restartCount = () => {
-        clearInterval(this.countInterval)
+        
         
       }
      
